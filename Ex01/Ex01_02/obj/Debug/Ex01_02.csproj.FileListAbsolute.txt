@@ -1,0 +1,8 @@
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\bin\Debug\Ex01_02.exe.config
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\bin\Debug\Ex01_02.exe
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\bin\Debug\Ex01_02.pdb
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\obj\Debug\Ex01_02.csproj.AssemblyReference.cache
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\obj\Debug\Ex01_02.csproj.SuggestedBindingRedirects.cache
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\obj\Debug\Ex01_02.csproj.CoreCompileInputs.cache
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\obj\Debug\Ex01_02.exe
+C:\Users\Yael.b\source\repos\Exercises_for_submission_CS\Ex01\Ex01_02\obj\Debug\Ex01_02.pdb
