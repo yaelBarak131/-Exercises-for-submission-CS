@@ -23,6 +23,7 @@ namespace Ex01_02
                 {
                     numStarsToPrint = (i_diamondHigh * 2 - 1 - i_currentRow) * 2 - 1;
                 }
+
                 numSpaceToPrint = (i_diamondHigh * 2 - 1 - numStarsToPrint) / 2;
 
                 string textToPrint = (new string(' ', numSpaceToPrint) + new string('*', numStarsToPrint) + new string(' ', numSpaceToPrint));
