@@ -5,30 +5,30 @@ namespace Ex01_02
     {
         public static void Main()
         {
-            PrintDaimon(5, 0);
+            DiamondForBeginners(6, 0);
         }
 
-        public static void PrintDaimon(int high, int i_currentRow)
+        public static void DiamondForBeginners(int i_diamondHigh, int i_currentRow)
         {
-            if (i_currentRow <= high * 2 - 1)//musere the num of total rows
+            if (i_currentRow < i_diamondHigh * 2 - 1)//musere the num of total rows
             {
                 int numStarsToPrint;
                 int numSpaceToPrint;
 
-                if (i_currentRow < high)//if we got to the "middle" of the rows
+                if (i_currentRow < i_diamondHigh)//if we got to the "middle" of the rows
                 {
                     numStarsToPrint = i_currentRow * 2 + 1;
                 }
                 else
                 {
-                    numStarsToPrint = (high * 2 - 1 - i_currentRow) * 2 - 1;
+                    numStarsToPrint = (i_diamondHigh * 2 - 1 - i_currentRow) * 2 - 1;
                 }
-                numSpaceToPrint = (high * 2 - 1 - numStarsToPrint) / 2;
+                numSpaceToPrint = (i_diamondHigh * 2 - 1 - numStarsToPrint) / 2;
 
                 string textToPrint = (new string(' ', numSpaceToPrint) + new string('*', numStarsToPrint) + new string(' ', numSpaceToPrint));
 
                 System.Console.WriteLine(textToPrint);
-                PrintDaimon(high,i_currentRow + 1);
+                DiamondForBeginners(i_diamondHigh,i_currentRow + 1);
             }
         }
     }
