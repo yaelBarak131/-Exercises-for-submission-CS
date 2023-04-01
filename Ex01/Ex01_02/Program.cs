@@ -5,7 +5,7 @@ namespace Ex01_02
     {
         public static void Main()
         {
-            DiamondForBeginners(6, 0);
+            DiamondForBeginners(5, 0);
         }
 
         public static void DiamondForBeginners(int i_diamondHigh, int i_currentRow)
