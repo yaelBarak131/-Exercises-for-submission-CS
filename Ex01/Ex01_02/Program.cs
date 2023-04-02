@@ -1,4 +1,6 @@
 ﻿
+using System.Text;
+
 namespace Ex01_02
 {
     public class Program
@@ -26,9 +28,14 @@ namespace Ex01_02
 
                 numSpaceToPrint = (i_diamondHigh * 2 - 1 - numStarsToPrint) / 2;
 
-                string textToPrint = (new string(' ', numSpaceToPrint) + new string('*', numStarsToPrint) + new string(' ', numSpaceToPrint));
+                StringBuilder textToPrint = new System.Text.StringBuilder();
+                string spacesToprint = new string(' ', numSpaceToPrint);
+                string starsToPrint = new string('*', numStarsToPrint);
 
-                System.Console.WriteLine(textToPrint);
+                textToPrint.Append(spacesToprint).Append(starsToPrint).Append(spacesToprint);
+
+
+                System.Console.WriteLine(textToPrint.ToString());
                 DiamondForBeginners(i_diamondHigh,i_currentRow + 1);
             }
         }
