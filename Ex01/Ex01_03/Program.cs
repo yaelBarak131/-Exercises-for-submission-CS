@@ -18,17 +18,17 @@ namespace Ex01_03
 
         private static void diamondForAdvanced()
         {
-            int high;
+            int diamonHigh;
             string userDiamondHigh = getInputFromUser("Please enter the high of the diamond you want: ");
-            bool unvalidInput = int.TryParse(userDiamondHigh, out high);
+            bool unvalidInput = int.TryParse(userDiamondHigh, out diamonHigh);
 
-            while (!unvalidInput)
+            while (!unvalidInput || diamonHigh < 0)
             {
                 userDiamondHigh = getInputFromUser("Please enter valid input(only number): ");
-                unvalidInput = int.TryParse(userDiamondHigh, out high);
+                unvalidInput = int.TryParse(userDiamondHigh, out diamonHigh);
             }
 
-            Ex01_02.Program.DiamondForBeginners(high, 0);
+            Ex01_02.Program.DiamondForBeginners(diamonHigh, 0);
 
         }
 
