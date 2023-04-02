@@ -10,23 +10,23 @@ namespace Ex01_02
             DiamondForBeginners(5, 0);
         }
 
-        public static void DiamondForBeginners(int i_diamondHigh, int i_currentRow)
+        public static void DiamondForBeginners(int i_DiamondHigh, int i_CurrentRow)
         {
-            if (i_currentRow < i_diamondHigh * 2 - 1)//musere the num of total rows
+            if (i_CurrentRow < i_DiamondHigh * 2 - 1)//musere the num of total rows
             {
                 int numStarsToPrint;
                 int numSpaceToPrint;
 
-                if (i_currentRow < i_diamondHigh)//if we got to the "middle" of the rows
+                if (i_CurrentRow < i_DiamondHigh)//if we got to the "middle" of the rows
                 {
-                    numStarsToPrint = i_currentRow * 2 + 1;
+                    numStarsToPrint = i_CurrentRow * 2 + 1;
                 }
                 else
                 {
-                    numStarsToPrint = (i_diamondHigh * 2 - 1 - i_currentRow) * 2 - 1;
+                    numStarsToPrint = (i_DiamondHigh * 2 - 1 - i_CurrentRow) * 2 - 1;
                 }
 
-                numSpaceToPrint = (i_diamondHigh * 2 - 1 - numStarsToPrint) / 2;
+                numSpaceToPrint = (i_DiamondHigh * 2 - 1 - numStarsToPrint) / 2;
 
                 StringBuilder textToPrint = new System.Text.StringBuilder();
                 string spacesToprint = new string(' ', numSpaceToPrint);
@@ -36,7 +36,7 @@ namespace Ex01_02
 
 
                 System.Console.WriteLine(textToPrint.ToString());
-                DiamondForBeginners(i_diamondHigh,i_currentRow + 1);
+                DiamondForBeginners(i_DiamondHigh,i_CurrentRow + 1);
             }
         }
     }
